@@ -1,0 +1,66 @@
+/* Blue gradient background */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #001f3f 0%, #003d7a 25%, #0074d9 50%, #1fa3f5 75%, #7fdbff 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #7fdbff;
+}
+
+/* Hero text styling */
+.hero-text {
+    text-align: center;
+    padding: 60px 20px;
+    font-size: 32px;
+    line-height: 1.6;
+}
+
+.hero-text h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+/* Mission and vision sections */
+.mission, .vision {
+    margin: 40px 20px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mission h1, .vision h1 {
+    margin-top: 0;
+    font-size: 28px;
+}
+
+.mission p, .vision p {
+    line-height: 1.8;
+    font-size: 16px;
+}
