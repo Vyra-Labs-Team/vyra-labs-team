@@ -1,66 +1,162 @@
-/* Blue gradient background */
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #001f3f 0%, #003d7a 25%, #0074d9 50%, #1fa3f5 75%, #7fdbff 100%);
-    background-attachment: fixed;
     min-height: 100vh;
     font-family: Arial, sans-serif;
-    color: white;
+    color: #ffffff;
+    background: linear-gradient(135deg, #001f3f 0%, #003d7a 25%, #0074d9 50%, #1fa3f5 75%, #7fdbff 100%);
+    background-attachment: fixed;
 }
 
-/* Navigation styling */
 nav ul {
     list-style: none;
-    padding: 20px;
-    display: flex;
-    gap: 30px;
-    background-color: rgba(0, 0, 0, 0.3);
+    padding: 18px 24px;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12px 22px;
+    background-color: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(8px);
+}
+
+.brand-item {
+    margin-right: auto;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.brand img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.75);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 nav a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 16px;
-    transition: color 0.3s ease;
+    padding: 8px 10px;
+    border-radius: 999px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
 }
 
-nav a:hover {
-    color: #7fdbff;
+nav a:hover,
+nav a:focus {
+    color: #001f3f;
+    background-color: #7fdbff;
+    transform: translateY(-1px);
 }
 
-/* Hero text styling */
 .hero-text {
     text-align: center;
-    padding: 60px 20px;
+    padding: 60px 20px 40px;
     font-size: 32px;
     line-height: 1.6;
 }
 
-.hero-text h1 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+.hero-text h1,
+.hero-text h2 {
     margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
 }
 
-/* Mission and vision sections */
-.mission, .vision {
-    margin: 40px 20px;
-    padding: 30px;
+.mission,
+.vision,
+.products,
+.wait-list,
+.core,
+.team,
+.contact {
+    margin: 32px auto;
+    padding: 28px 24px;
     background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    border-radius: 14px;
+    max-width: 850px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(6px);
 }
 
-.mission h1, .vision h1 {
+.mission h1,
+.vision h1,
+.products h1,
+.core h2,
+.contact h2,
+.team h2 {
     margin-top: 0;
     font-size: 28px;
 }
 
-.mission p, .vision p {
+.mission p,
+.vision p,
+.products p,
+.core p,
+.contact p,
+.team p,
+.hero-text p,
+.hero-text ul,
+.hero-text li {
     line-height: 1.8;
     font-size: 16px;
 }
+
+.products a,
+.wait-list a,
+.core a,
+.contact a,
+.team a {
+    color: #7fdbff;
+    font-weight: 700;
+}
+
+.team > div {
+    padding: 14px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.team > div:first-of-type {
+    border-top: none;
+    padding-top: 0;
+}
+
+.form iframe {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        justify-content: flex-start;
+    }
+
+    .brand-item {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 6px;
+    }
+
+    .hero-text {
+        font-size: 24px;
+        padding-top: 40px;
+    }
+}
+
