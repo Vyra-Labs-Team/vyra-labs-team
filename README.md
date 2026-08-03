@@ -5,8 +5,8 @@ Building the future of technology in Africa.
 Private. Fast. Yours.
 This is Vyra Labs Technologies.
 ## Connect With Us
-- [Website](https://)
-- [Core Chat Waitlist](https://)
+- [Website](https://vyralabstech.github.io/vyralabstech/)
+- [Core Chat Waitlist](https://vyralabstech.github.io/vyralabstech/waitlist.html)
 - [Instagram](https://instagram.com/vyralabstech)
 - [Facebook Page](https://facebook.com/)
 - [YouTube](https://youtube.com/@vyralabstech)
